@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script type="text/javascript" language="javascript">
+        function abc() {
+            alert("This is functional Alert")
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        // console.log(typeof ("hii"))
+        // console.log(typeof (null))
+        // console.log(typeof (name === null))
+
+        // const person = { firstname: "Divy", lastname: "Modi", age: 20 }
+        // console.log(person.firstname)
+        // console.log(person.lastname)
+        // console.log(person.age)
+        // document.write("Hello my name is <br>" + person.firstname + person.lastname + person.age)
+
+        // const myArray = []
+        // const fruits = ["banana", "orange", "apple", "kiwi"]
+        // let length = fruits.length
+        // let fruit = fruits[0]
+        // console.log(fruit)
+        // console.log(fruits[length-1])
+
+        // var i
+        // var emp=new Array("abc","xyz","pqr")
+        // for(i=0 ; i<emp.length ; i++){
+        //     document.write(emp[i]+"<br>")
+        // }
+
+        // var i
+        // const myArray = [2, 4, 3, 1, 5]
+        // for (i = 0; i < myArray.length; i++) {
+        //     document.write("Multiplication is :" + myArray[i] * 2 + "<br>")
+        // }
+
+        // function fun1(a, b) {
+        //     alert("Name:" + a + " " + "Surname:" + b)
+        // }
+
+        // var a = function (x, y) {
+        //     return x + y
+        // }
+        // let result = a(3, 5)
+        // document.write(result)
+
+        function emp(id, name, age) {
+            this.id = id;
+            this.name = name;
+            this.age = age;
+        }
+        let employee = new emp(1, "abc", 23)
+        document.write(employee.id + " " + employee.name + " " + employee.age)
+
+    </script>
+    <!-- <input type="button" value="Click here" onclick=fun1('Divy','Modi')> -->
+</body>
+
+</html>
