@@ -1,0 +1,55 @@
+<!--Write a JS to change text,color,bg-color onclick using tagnamemethod -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="demo">Hii</p>
+    <p class="demo">Hii</p>
+    <p class="demo">Hii</p>
+    <input type="button" value="Change" onclick="func1()">
+    <script>
+        // var ischanged = false
+        // function func1() {
+        //     var x = document.getElementsByTagName("p")
+        //     for (i = 0; i < x.length; i++) {
+        //         if (ischanged) {
+        //             x[i].innerHTML = "Hii"
+        //             x[i].style.color = "black"
+        //             x[i].style.backgroundColor = "white"
+        //         }
+        //         else {
+        //             x[i].innerHTML = "Change Text"
+        //             x[i].style.color = "blue"
+        //             x[i].style.backgroundColor = "red"
+        //         }
+        //     }
+        //     ischanged = !ischanged
+        // }
+
+        var ischanged = false
+        function func1() {
+            var x = document.getElementsByClassName("demo")
+            for (i = 0; i < x.length; i++) {
+                if (ischanged) {
+                    x[i].innerHTML = "Hii"
+                    x[i].style.color = "black"
+                    x[i].style.backgroundColor = "white"
+                }
+                else {
+                    x[i].innerHTML = "Change Text"
+                    x[i].style.color = "blue"
+                    x[i].style.backgroundColor = "red"
+                }
+            }
+            ischanged = !ischanged
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!-- Write a JS code to convert uppercase and lowercase from return text onclick -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo">Hello how are you?</p>
+    <input type="button" value="uppercase" onclick="func1()">
+    <input type="button" value="lowercase" onclick="func2()">
+    <script>
+        function func1() {
+            var x = document.getElementsByTagName("p")
+            x[0].style.textTransform = "uppercase"
+        }
+        function func2() {
+            var x = document.getElementsByTagName("p")
+            x[0].style.textTransform = "lowercase"
+        }
+    </script>
+</body>
+
+</html>
