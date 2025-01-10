@@ -1,0 +1,43 @@
+<!-- Write a JS to handle following mouse events:
+     1. If mouse is over heading it should turn yellow
+     2. If mouse should go out then it should be black
+     3. If button name find time is click then it show date and time information
+     4. If button name red is click then bg should turn red
+     5. If button name green is click then bg should turn red-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body class="id1">
+
+    <script>
+        function mover(e) {
+            e.style.color = "yellow"
+        }
+        function mout(e) {
+            e.style.color = "black"
+        }
+        function time1(e) {
+
+        }
+        function red(e) {
+            document.getElementsByTagName("body")[0].style.backgroundColor = "red"
+        }
+        function green(e) {
+            document.getElementsByTagName("body")[0].style.backgroundColor = "green"
+        }
+    </script>
+    <h1 onmouseover="mover(this)" onmouseout="mout(this)">Heading</h1>
+    <!-- Find time pending -->
+    <button>Find Time</button>
+    <button onclick="red(this)">Red</button>
+    <button onclick="green(this)">Green</button>
+</body>
+
+</html>

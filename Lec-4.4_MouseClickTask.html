@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+
+    <script>
+        function fun(e) {
+            val = e.button
+            switch (val) {
+                case 0: alert("Left Click")
+                    break;
+                case 1: alert("Middle Click")
+                    break;
+                case 2: alert("Right Click")
+                    break;
+            }
+        }
+    </script>
+    <div onmousedown="fun(event) " style="background-color: cyan;width: 70px;height: 30px;padding: 20px;">Click Me</div>
+</body>
+
+</html>

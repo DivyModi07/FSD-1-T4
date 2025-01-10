@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+    <p id="a">P Tag-1</p>
+    <p class="b">P Tag-1</p>
+    <p>P Tag-1</p>
+    <input type="button" value="Click" onClick="fun()">
+    <script>
+        function fun() {
+            var a = document.getElementById("a")
+            var b = document.getElementsByClassName("b")
+            var c = document.getElementsByTagName(p) // Error
+
+            a.innerHTML = "Changed by id"
+
+            for (let i = 0; i < b.length; i++) {
+                b[i].innerHTML = "Change by id"
+                b[i].style.backgroundColor = "red"
+
+            }
+            c[0].innerHTML = "Change by element"
+            for (let i = 0; i < c.length; i++) {
+                c[i].innerHTML = "Change by class"
+                c[i].style.backgroundColor = "cyan"
+
+            }
+        }
+    </script>
+</body>
+
+</html>

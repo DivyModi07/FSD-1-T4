@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <script>
+        function change(id) {
+            id.innerHTML = "Changed text"
+        }
+    </script>
+</head>
+
+<body>
+    <h1 onclick="this.innerHTML='Text Changed'">Click here to Change 1</h1>
+
+    <h1 id="d" onclick="change(this)">Click here to Change 2</h1>
+
+    <!-- <h1 id="d" onclick="d1()">Click here to Change 3</h1>
+    <script>
+        function d1() {
+            document.getElementById("d").innerHTML = "Text Changed"
+        } -->
+    </script>
+</body>
+
+</html>

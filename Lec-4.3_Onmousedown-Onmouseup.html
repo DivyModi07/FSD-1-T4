@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+    <div onmousedown="mdown(this)" onmouseup="mup(this) "
+        style="background-color: cyan;width: 70px;height: 30px;padding: 20px;">Click Me</div>
+    <br>
+    <div onmouseover="mover(this)" onmouseout="mout(this) "
+        style="background-color: cyan;width: 70px;height: 30px;padding: 20px;">Click Me</div>
+    <script>
+        function mdown(e) {
+            e.style.backgroundColor = "yellow",
+                e.innerHTML = "Clicked"
+        }
+
+        function mup(e) {
+            e.style.backgroundColor = "pink",
+                e.innerHTML = "Released"
+        }
+
+        function mover(e) {
+            e.style.backgroundColor = "red",
+                e.innerHTML = "Clicked"
+        }
+
+        function mout(e) {
+            e.style.backgroundColor = "green",
+                e.innerHTML = "Released"
+        }
+    </script>
+</body>
+
+</html>
