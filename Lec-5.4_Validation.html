@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fun1() {
+            // pat = /abc/         
+            // pat = /abc/i       // i is modifier that make case insensitive
+            // pat = /[abc]/     // consider individual characters
+            // pat = /[^abc]/   // akele a,b,c will not work
+            // pat = /[0-9]/   // consider individual characters
+            // pat = /[^0-9]/ // akele 0-9 will not work
+            pat = /[(x|y)]/  // either x or y should be their
+            u = document.getElementById("t1").value
+            if (pat.test(u)) {
+                alert("Perfect & value is " + u)
+            }
+            else {
+                alert("Not perfect")
+            }
+        }
+    </script>
+
+    Name:<input type="text" id="t1"><br><br>
+    <input type="submit" onclick="fun1()">
+</body>
+
+</html>

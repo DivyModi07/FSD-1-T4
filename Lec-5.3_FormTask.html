@@ -1,0 +1,28 @@
+<!-- Write a JS code to display alert with popup text mesaage:Enter something if input field is empty on clicking submit button. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fun2() {
+            obj = document.f1.t1.value
+            if (obj == "") {
+                alert("Enter Something")
+            }
+        }
+    </script>
+
+    <form name="f1" onsubmit="fun2()">
+        Name:<input type="text" name="t1"><br><br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
