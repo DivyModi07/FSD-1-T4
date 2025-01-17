@@ -1,0 +1,36 @@
+<!-- 23002171210029@mail.ljku.in -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fun1() {
+            // pat=/^[A-Z]+$/  Username
+            // pat=/^\d{10}$/  Mobile
+            // pat=/^\w+([\._]?\w+)*@(\.\w{2,3})+$/  Email
+            // pat = /^\d{14}@\w{4}\.\w{4}\.\w{2}$/
+            pat = /^\d{14}@\w{4}\.\w{3}\.\w{2,3}$/
+            v = document.getElementById("t2").value
+            if (pat.test(v)) {
+                alert("Valid")
+            }
+            else {
+                alert("Invalid")
+            }
+        }
+    </script>
+
+    <form action="">
+        Input:<input type="text" id="t2"><br><br>
+        <input type="submit" onclick="fun1()">
+    </form>
+</body>
+
+</html>
