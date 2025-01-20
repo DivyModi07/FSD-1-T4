@@ -1,0 +1,37 @@
+<!-- Write a program to display form element value:fname,lname,gender and selected game on submit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        fname = document.f1.fname.value
+        document.write(obj)
+        localStorage.setItem('fname', fname)
+        lname = document.f1.lname.value
+        document.write(obj)
+        localStorage.setItem('lname', lname)
+        gender = document.f1.gender.value
+        document.write(obj)
+        localStorage.setItem('gender', gender)
+
+    </script>
+    <form method="get" name="f1" action="#" onsubmit="func()">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        Gender: <input type="radio" value="male" name="gender">Male
+        <input type="radio" value="male" name="gender">Female <br>
+        Select Game: <input type="checkbox" value="football">Football
+        <input type="checkbox" value="Cricket">Cricket
+        <input type="checkbox" value="Basketball">Basketball <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

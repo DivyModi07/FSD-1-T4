@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // odd=[1,2,4]
+        // combine=[5,7,8,...odd]
+        // console.log(combine)
+
+        function func() {
+            const num1 = [23, 55, 21, 87, 56]
+            const num2 = [15, 16, 18, 99]
+            const fnum = [...num1, ...num2]
+            // let maxvalue = Math.max(fnum) Output:NAN because Math.max cannot be used on arrays
+            let maxvalue = Math.max(...fnum)
+            console.log(fnum)
+            console.log(...fnum)
+            document.getElementById("demo").innerHTML = maxvalue
+        }
+
+        const arr=['abc','pqr','xyz']
+        const obj={...arr}
+        console.log(obj)
+
+        function func1(a,b){
+            console.log(a)
+            console.log(b)
+        }
+        func1(1,2,3,4,5)
+
+        function func2(...rest){
+            console.log(rest)
+        }
+        func2(1,2,3,4,5)
+
+        function func3(a,b,...rest) {
+                console.log(rest)
+            }
+            func3(1, 2, 3, 4, 5)
+
+        // ECMA Script
+        myfun=(...arg)=>arg.length
+        console.log(`length=${myfun(10,20,30,40,50)}`)
+
+        function cricket(a,b,...c){
+            document.write(`Value of a and b is ${a} & ${b} <br>`)
+            document.write(`Value of c is ${c} <br>`)
+            document.write(`Player at 0th index is ${c[0]} <br>`)
+            document.write(`Length of Rest operator is ${c.length} <br>`)
+            document.write(`Index of Jadeja is ${c.indexOf('Jadeja')} <br>`)
+            document.write(`Index of abc is ${c.indexOf('abc')} <br>`)
+        }
+        cricket("Dhoni","Rohit","Kholi","Jadeja","Pant")
+
+        function func3(p=2,q){
+            return (p+q)
+            // return (p)
+        }
+        console.log(`Addition=${func3(30)}`)
+
+    </script>
+
+    <p onclick="func()">Max value for above array is</p>
+    <p id="demo"></p>
+</body>
+
+</html>
