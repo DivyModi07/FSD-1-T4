@@ -1,0 +1,66 @@
+<!--Using ES6 sort string in alphabetically stored in array-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // arr=["abc","xyz","def"]
+    // arr=arr.sort()
+    // document.write(arr)
+
+    let map = new Map()
+    map.set("ABC", 'Faculty')
+    map.set("XYZ", 'Dean')
+    map.set("PQR", 'Peon')
+    map.set("JKL", 'Admin')
+    console.log(map)
+    map.delete("PQR")
+    console.log(map)
+    map.set("JKL","Student")
+    console.log(map)
+
+    s="this is demo"
+    s1="AAA"
+    s2="ABC"
+    console.log(s.startsWith("this"))
+    console.log(s.startsWith("this",8))
+    console.log(s.startsWith("demo",8))
+    console.log(s.startsWith("this",12))
+    console.log(s.startsWith("is"))
+
+    const[bird,currency,river]=["peacock","rupees","ganga"]
+    console.log(`
+    National bird is ${bird},
+    National currency is ${currency},
+    National river is ${river}.`
+    )
+
+    var colors=["violet","indigo","blue","green","yellow","orange","red"]
+    var [c1,,c3,,c8]=colors
+    console.log(c1)
+    console.log(c3)
+    console.log(c8)
+
+    let username="ABC",age=29
+    let user1={uname:username,a:age}
+    console.log(user1.uname)
+    console.log(user1.a)
+
+    emp={name:"ABC",position:"Developer",id:"24"}
+    const{name:n,position:p,id:i}=emp
+    console.log(n)
+    console.log(p)
+    console.log(i)
+
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        list = [10, 20, 30]  // in list index is key and element is value
+        for (let score of list) { // 'of' for use of value
+            console.log(score)
+        }
+
+        list1 = [10, 20, 30]
+        for (let key in list) {  // 'in' for use of key
+            console.log(key)
+            // console.log(list[key])
+        }
+
+        fruit = { a: 'apple', b: 'banana', c: 'cherry' }
+        for (let f in fruit) {
+            console.log(f)
+            console.log(fruit[f])
+        }
+
+        for (let [index, score] of list.entries()) {
+            console.log(`${score} is @ ${index}`)
+        }
+    </script>
+</body>
+
+</html>
